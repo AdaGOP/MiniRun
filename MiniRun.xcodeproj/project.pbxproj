@@ -1,0 +1,923 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F457BD2626B7DA86003FA082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD2526B7DA86003FA082 /* AppDelegate.swift */; };
+		F457BD2826B7DA86003FA082 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD2726B7DA86003FA082 /* SceneDelegate.swift */; };
+		F457BD2A26B7DA86003FA082 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD2926B7DA86003FA082 /* ContentView.swift */; };
+		F457BD2C26B7DA86003FA082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F457BD2B26B7DA86003FA082 /* Assets.xcassets */; };
+		F457BD2F26B7DA86003FA082 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F457BD2E26B7DA86003FA082 /* Preview Assets.xcassets */; };
+		F457BD3226B7DA86003FA082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F457BD3026B7DA86003FA082 /* LaunchScreen.storyboard */; };
+		F457BD3D26B7DA86003FA082 /* MiniRunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD3C26B7DA86003FA082 /* MiniRunTests.swift */; };
+		F457BD4826B7DA87003FA082 /* MiniRunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD4726B7DA87003FA082 /* MiniRunUITests.swift */; };
+		F457BD4D26B7DA87003FA082 /* MiniRun WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F457BD4C26B7DA87003FA082 /* MiniRun WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F457BD5326B7DA87003FA082 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F457BD5126B7DA87003FA082 /* Interface.storyboard */; };
+		F457BD5526B7DA87003FA082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F457BD5426B7DA87003FA082 /* Assets.xcassets */; };
+		F457BD5C26B7DA87003FA082 /* MiniRun WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F457BD5B26B7DA87003FA082 /* MiniRun WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F457BD6126B7DA87003FA082 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD6026B7DA87003FA082 /* HostingController.swift */; };
+		F457BD6326B7DA87003FA082 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD6226B7DA87003FA082 /* ContentView.swift */; };
+		F457BD6526B7DA87003FA082 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD6426B7DA87003FA082 /* ExtensionDelegate.swift */; };
+		F457BD6726B7DA87003FA082 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD6626B7DA87003FA082 /* NotificationController.swift */; };
+		F457BD6926B7DA87003FA082 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD6826B7DA87003FA082 /* NotificationView.swift */; };
+		F457BD6B26B7DA87003FA082 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD6A26B7DA87003FA082 /* ComplicationController.swift */; };
+		F457BD6D26B7DA88003FA082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F457BD6C26B7DA88003FA082 /* Assets.xcassets */; };
+		F457BD7026B7DA88003FA082 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F457BD6F26B7DA88003FA082 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F457BD3926B7DA86003FA082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F457BD1A26B7DA85003FA082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F457BD2126B7DA86003FA082;
+			remoteInfo = MiniRun;
+		};
+		F457BD4426B7DA86003FA082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F457BD1A26B7DA85003FA082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F457BD2126B7DA86003FA082;
+			remoteInfo = MiniRun;
+		};
+		F457BD4E26B7DA87003FA082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F457BD1A26B7DA85003FA082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F457BD4B26B7DA87003FA082;
+			remoteInfo = "MiniRun WatchKit App";
+		};
+		F457BD5D26B7DA87003FA082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F457BD1A26B7DA85003FA082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F457BD5A26B7DA87003FA082;
+			remoteInfo = "MiniRun WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F457BD7826B7DA88003FA082 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F457BD5C26B7DA87003FA082 /* MiniRun WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F457BD7C26B7DA88003FA082 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F457BD4D26B7DA87003FA082 /* MiniRun WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F457BD2226B7DA86003FA082 /* MiniRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F457BD2526B7DA86003FA082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F457BD2726B7DA86003FA082 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F457BD2926B7DA86003FA082 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F457BD2B26B7DA86003FA082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F457BD2E26B7DA86003FA082 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F457BD3126B7DA86003FA082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F457BD3326B7DA86003FA082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F457BD3826B7DA86003FA082 /* MiniRunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniRunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F457BD3C26B7DA86003FA082 /* MiniRunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniRunTests.swift; sourceTree = "<group>"; };
+		F457BD3E26B7DA86003FA082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F457BD4326B7DA86003FA082 /* MiniRunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniRunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F457BD4726B7DA87003FA082 /* MiniRunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniRunUITests.swift; sourceTree = "<group>"; };
+		F457BD4926B7DA87003FA082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F457BD4C26B7DA87003FA082 /* MiniRun WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiniRun WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F457BD5226B7DA87003FA082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F457BD5426B7DA87003FA082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F457BD5626B7DA87003FA082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F457BD5B26B7DA87003FA082 /* MiniRun WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MiniRun WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F457BD6026B7DA87003FA082 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		F457BD6226B7DA87003FA082 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F457BD6426B7DA87003FA082 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F457BD6626B7DA87003FA082 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F457BD6826B7DA87003FA082 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		F457BD6A26B7DA87003FA082 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F457BD6C26B7DA88003FA082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F457BD6F26B7DA88003FA082 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F457BD7126B7DA88003FA082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F457BD7226B7DA88003FA082 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F457BD1F26B7DA86003FA082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F457BD3526B7DA86003FA082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F457BD4026B7DA86003FA082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F457BD5826B7DA87003FA082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F457BD1926B7DA85003FA082 = {
+			isa = PBXGroup;
+			children = (
+				F457BD2426B7DA86003FA082 /* MiniRun */,
+				F457BD3B26B7DA86003FA082 /* MiniRunTests */,
+				F457BD4626B7DA87003FA082 /* MiniRunUITests */,
+				F457BD5026B7DA87003FA082 /* MiniRun WatchKit App */,
+				F457BD5F26B7DA87003FA082 /* MiniRun WatchKit Extension */,
+				F457BD2326B7DA86003FA082 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F457BD2326B7DA86003FA082 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F457BD2226B7DA86003FA082 /* MiniRun.app */,
+				F457BD3826B7DA86003FA082 /* MiniRunTests.xctest */,
+				F457BD4326B7DA86003FA082 /* MiniRunUITests.xctest */,
+				F457BD4C26B7DA87003FA082 /* MiniRun WatchKit App.app */,
+				F457BD5B26B7DA87003FA082 /* MiniRun WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F457BD2426B7DA86003FA082 /* MiniRun */ = {
+			isa = PBXGroup;
+			children = (
+				F457BD2526B7DA86003FA082 /* AppDelegate.swift */,
+				F457BD2726B7DA86003FA082 /* SceneDelegate.swift */,
+				F457BD2926B7DA86003FA082 /* ContentView.swift */,
+				F457BD2B26B7DA86003FA082 /* Assets.xcassets */,
+				F457BD3026B7DA86003FA082 /* LaunchScreen.storyboard */,
+				F457BD3326B7DA86003FA082 /* Info.plist */,
+				F457BD2D26B7DA86003FA082 /* Preview Content */,
+			);
+			path = MiniRun;
+			sourceTree = "<group>";
+		};
+		F457BD2D26B7DA86003FA082 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F457BD2E26B7DA86003FA082 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F457BD3B26B7DA86003FA082 /* MiniRunTests */ = {
+			isa = PBXGroup;
+			children = (
+				F457BD3C26B7DA86003FA082 /* MiniRunTests.swift */,
+				F457BD3E26B7DA86003FA082 /* Info.plist */,
+			);
+			path = MiniRunTests;
+			sourceTree = "<group>";
+		};
+		F457BD4626B7DA87003FA082 /* MiniRunUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F457BD4726B7DA87003FA082 /* MiniRunUITests.swift */,
+				F457BD4926B7DA87003FA082 /* Info.plist */,
+			);
+			path = MiniRunUITests;
+			sourceTree = "<group>";
+		};
+		F457BD5026B7DA87003FA082 /* MiniRun WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F457BD5126B7DA87003FA082 /* Interface.storyboard */,
+				F457BD5426B7DA87003FA082 /* Assets.xcassets */,
+				F457BD5626B7DA87003FA082 /* Info.plist */,
+			);
+			path = "MiniRun WatchKit App";
+			sourceTree = "<group>";
+		};
+		F457BD5F26B7DA87003FA082 /* MiniRun WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F457BD6026B7DA87003FA082 /* HostingController.swift */,
+				F457BD6226B7DA87003FA082 /* ContentView.swift */,
+				F457BD6426B7DA87003FA082 /* ExtensionDelegate.swift */,
+				F457BD6626B7DA87003FA082 /* NotificationController.swift */,
+				F457BD6826B7DA87003FA082 /* NotificationView.swift */,
+				F457BD6A26B7DA87003FA082 /* ComplicationController.swift */,
+				F457BD6C26B7DA88003FA082 /* Assets.xcassets */,
+				F457BD7126B7DA88003FA082 /* Info.plist */,
+				F457BD7226B7DA88003FA082 /* PushNotificationPayload.apns */,
+				F457BD6E26B7DA88003FA082 /* Preview Content */,
+			);
+			path = "MiniRun WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F457BD6E26B7DA88003FA082 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F457BD6F26B7DA88003FA082 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F457BD2126B7DA86003FA082 /* MiniRun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F457BD7D26B7DA88003FA082 /* Build configuration list for PBXNativeTarget "MiniRun" */;
+			buildPhases = (
+				F457BD1E26B7DA86003FA082 /* Sources */,
+				F457BD1F26B7DA86003FA082 /* Frameworks */,
+				F457BD2026B7DA86003FA082 /* Resources */,
+				F457BD7C26B7DA88003FA082 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F457BD4F26B7DA87003FA082 /* PBXTargetDependency */,
+			);
+			name = MiniRun;
+			productName = MiniRun;
+			productReference = F457BD2226B7DA86003FA082 /* MiniRun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F457BD3726B7DA86003FA082 /* MiniRunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F457BD8026B7DA88003FA082 /* Build configuration list for PBXNativeTarget "MiniRunTests" */;
+			buildPhases = (
+				F457BD3426B7DA86003FA082 /* Sources */,
+				F457BD3526B7DA86003FA082 /* Frameworks */,
+				F457BD3626B7DA86003FA082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F457BD3A26B7DA86003FA082 /* PBXTargetDependency */,
+			);
+			name = MiniRunTests;
+			productName = MiniRunTests;
+			productReference = F457BD3826B7DA86003FA082 /* MiniRunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F457BD4226B7DA86003FA082 /* MiniRunUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F457BD8326B7DA88003FA082 /* Build configuration list for PBXNativeTarget "MiniRunUITests" */;
+			buildPhases = (
+				F457BD3F26B7DA86003FA082 /* Sources */,
+				F457BD4026B7DA86003FA082 /* Frameworks */,
+				F457BD4126B7DA86003FA082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F457BD4526B7DA86003FA082 /* PBXTargetDependency */,
+			);
+			name = MiniRunUITests;
+			productName = MiniRunUITests;
+			productReference = F457BD4326B7DA86003FA082 /* MiniRunUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F457BD4B26B7DA87003FA082 /* MiniRun WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F457BD7926B7DA88003FA082 /* Build configuration list for PBXNativeTarget "MiniRun WatchKit App" */;
+			buildPhases = (
+				F457BD4A26B7DA87003FA082 /* Resources */,
+				F457BD7826B7DA88003FA082 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F457BD5E26B7DA87003FA082 /* PBXTargetDependency */,
+			);
+			name = "MiniRun WatchKit App";
+			productName = "MiniRun WatchKit App";
+			productReference = F457BD4C26B7DA87003FA082 /* MiniRun WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F457BD5A26B7DA87003FA082 /* MiniRun WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F457BD7526B7DA88003FA082 /* Build configuration list for PBXNativeTarget "MiniRun WatchKit Extension" */;
+			buildPhases = (
+				F457BD5726B7DA87003FA082 /* Sources */,
+				F457BD5826B7DA87003FA082 /* Frameworks */,
+				F457BD5926B7DA87003FA082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MiniRun WatchKit Extension";
+			productName = "MiniRun WatchKit Extension";
+			productReference = F457BD5B26B7DA87003FA082 /* MiniRun WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F457BD1A26B7DA85003FA082 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F457BD2126B7DA86003FA082 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F457BD3726B7DA86003FA082 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F457BD2126B7DA86003FA082;
+					};
+					F457BD4226B7DA86003FA082 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F457BD2126B7DA86003FA082;
+					};
+					F457BD4B26B7DA87003FA082 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F457BD5A26B7DA87003FA082 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = F457BD1D26B7DA86003FA082 /* Build configuration list for PBXProject "MiniRun" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F457BD1926B7DA85003FA082;
+			productRefGroup = F457BD2326B7DA86003FA082 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F457BD2126B7DA86003FA082 /* MiniRun */,
+				F457BD3726B7DA86003FA082 /* MiniRunTests */,
+				F457BD4226B7DA86003FA082 /* MiniRunUITests */,
+				F457BD4B26B7DA87003FA082 /* MiniRun WatchKit App */,
+				F457BD5A26B7DA87003FA082 /* MiniRun WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F457BD2026B7DA86003FA082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F457BD3226B7DA86003FA082 /* LaunchScreen.storyboard in Resources */,
+				F457BD2F26B7DA86003FA082 /* Preview Assets.xcassets in Resources */,
+				F457BD2C26B7DA86003FA082 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F457BD3626B7DA86003FA082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F457BD4126B7DA86003FA082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F457BD4A26B7DA87003FA082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F457BD5526B7DA87003FA082 /* Assets.xcassets in Resources */,
+				F457BD5326B7DA87003FA082 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F457BD5926B7DA87003FA082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F457BD7026B7DA88003FA082 /* Preview Assets.xcassets in Resources */,
+				F457BD6D26B7DA88003FA082 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F457BD1E26B7DA86003FA082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F457BD2626B7DA86003FA082 /* AppDelegate.swift in Sources */,
+				F457BD2826B7DA86003FA082 /* SceneDelegate.swift in Sources */,
+				F457BD2A26B7DA86003FA082 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F457BD3426B7DA86003FA082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F457BD3D26B7DA86003FA082 /* MiniRunTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F457BD3F26B7DA86003FA082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F457BD4826B7DA87003FA082 /* MiniRunUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F457BD5726B7DA87003FA082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F457BD6326B7DA87003FA082 /* ContentView.swift in Sources */,
+				F457BD6126B7DA87003FA082 /* HostingController.swift in Sources */,
+				F457BD6726B7DA87003FA082 /* NotificationController.swift in Sources */,
+				F457BD6526B7DA87003FA082 /* ExtensionDelegate.swift in Sources */,
+				F457BD6926B7DA87003FA082 /* NotificationView.swift in Sources */,
+				F457BD6B26B7DA87003FA082 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F457BD3A26B7DA86003FA082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F457BD2126B7DA86003FA082 /* MiniRun */;
+			targetProxy = F457BD3926B7DA86003FA082 /* PBXContainerItemProxy */;
+		};
+		F457BD4526B7DA86003FA082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F457BD2126B7DA86003FA082 /* MiniRun */;
+			targetProxy = F457BD4426B7DA86003FA082 /* PBXContainerItemProxy */;
+		};
+		F457BD4F26B7DA87003FA082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F457BD4B26B7DA87003FA082 /* MiniRun WatchKit App */;
+			targetProxy = F457BD4E26B7DA87003FA082 /* PBXContainerItemProxy */;
+		};
+		F457BD5E26B7DA87003FA082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F457BD5A26B7DA87003FA082 /* MiniRun WatchKit Extension */;
+			targetProxy = F457BD5D26B7DA87003FA082 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F457BD3026B7DA86003FA082 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F457BD3126B7DA86003FA082 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F457BD5126B7DA87003FA082 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F457BD5226B7DA87003FA082 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F457BD7326B7DA88003FA082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F457BD7426B7DA88003FA082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F457BD7626B7DA88003FA082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MiniRun WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = W84329STPY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MiniRun WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.MiniRun.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		F457BD7726B7DA88003FA082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MiniRun WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = W84329STPY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MiniRun WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.MiniRun.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		F457BD7A26B7DA88003FA082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W84329STPY;
+				IBSC_MODULE = MiniRun_WatchKit_Extension;
+				INFOPLIST_FILE = "MiniRun WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.MiniRun.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		F457BD7B26B7DA88003FA082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W84329STPY;
+				IBSC_MODULE = MiniRun_WatchKit_Extension;
+				INFOPLIST_FILE = "MiniRun WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.MiniRun.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		F457BD7E26B7DA88003FA082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MiniRun/Preview Content\"";
+				DEVELOPMENT_TEAM = W84329STPY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MiniRun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.MiniRun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F457BD7F26B7DA88003FA082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MiniRun/Preview Content\"";
+				DEVELOPMENT_TEAM = W84329STPY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MiniRun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.MiniRun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F457BD8126B7DA88003FA082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W84329STPY;
+				INFOPLIST_FILE = MiniRunTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.MiniRunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniRun.app/MiniRun";
+			};
+			name = Debug;
+		};
+		F457BD8226B7DA88003FA082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W84329STPY;
+				INFOPLIST_FILE = MiniRunTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.MiniRunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniRun.app/MiniRun";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F457BD8426B7DA88003FA082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W84329STPY;
+				INFOPLIST_FILE = MiniRunUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.MiniRunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiniRun;
+			};
+			name = Debug;
+		};
+		F457BD8526B7DA88003FA082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W84329STPY;
+				INFOPLIST_FILE = MiniRunUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.MiniRunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiniRun;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F457BD1D26B7DA86003FA082 /* Build configuration list for PBXProject "MiniRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F457BD7326B7DA88003FA082 /* Debug */,
+				F457BD7426B7DA88003FA082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F457BD7526B7DA88003FA082 /* Build configuration list for PBXNativeTarget "MiniRun WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F457BD7626B7DA88003FA082 /* Debug */,
+				F457BD7726B7DA88003FA082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F457BD7926B7DA88003FA082 /* Build configuration list for PBXNativeTarget "MiniRun WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F457BD7A26B7DA88003FA082 /* Debug */,
+				F457BD7B26B7DA88003FA082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F457BD7D26B7DA88003FA082 /* Build configuration list for PBXNativeTarget "MiniRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F457BD7E26B7DA88003FA082 /* Debug */,
+				F457BD7F26B7DA88003FA082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F457BD8026B7DA88003FA082 /* Build configuration list for PBXNativeTarget "MiniRunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F457BD8126B7DA88003FA082 /* Debug */,
+				F457BD8226B7DA88003FA082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F457BD8326B7DA88003FA082 /* Build configuration list for PBXNativeTarget "MiniRunUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F457BD8426B7DA88003FA082 /* Debug */,
+				F457BD8526B7DA88003FA082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F457BD1A26B7DA85003FA082 /* Project object */;
+}
