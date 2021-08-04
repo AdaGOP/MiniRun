@@ -9,4 +9,5 @@ import Foundation
 
 class WorkoutDetailViewModel: ObservableObject {
     let data = DummyDataHelper().getSingleDummyModel()
+    let coba = "coba"
 }

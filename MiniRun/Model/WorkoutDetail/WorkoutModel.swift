@@ -26,4 +26,6 @@ struct WorkoutModel {
     var averageCandence: Int = 0
     var averageHeartRate: Int = 0
     var averagePace: Double = 0.0
+    var cobaJuga = "cobaJuga"
+    
 }
