@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4276FF026BA9A66000D660C /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4276FEF26BA9A66000D660C /* Color+Extension.swift */; };
 		F457BD2626B7DA86003FA082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD2526B7DA86003FA082 /* AppDelegate.swift */; };
 		F457BD2826B7DA86003FA082 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD2726B7DA86003FA082 /* SceneDelegate.swift */; };
 		F457BD2A26B7DA86003FA082 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD2926B7DA86003FA082 /* ContentView.swift */; };
@@ -27,6 +28,14 @@
 		F457BD6B26B7DA87003FA082 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD6A26B7DA87003FA082 /* ComplicationController.swift */; };
 		F457BD6D26B7DA88003FA082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F457BD6C26B7DA88003FA082 /* Assets.xcassets */; };
 		F457BD7026B7DA88003FA082 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F457BD6F26B7DA88003FA082 /* Preview Assets.xcassets */; };
+		F457BD8D26B8DD8A003FA082 /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD8C26B8DD8A003FA082 /* WorkoutDetailView.swift */; };
+		F457BD9926B8DD95003FA082 /* WorkoutDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD9826B8DD95003FA082 /* WorkoutDetailViewModel.swift */; };
+		F457BDA226B8DDBC003FA082 /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BDA126B8DDBC003FA082 /* WorkoutModel.swift */; };
+		F4C560A726B8E7880006B84A /* DummyDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C560A626B8E7880006B84A /* DummyDataHelper.swift */; };
+		F4C560AE26B8EA810006B84A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C560AD26B8EA810006B84A /* Date+Extension.swift */; };
+		F4C560BF26B8ED1E0006B84A /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C560BE26B8ED1E0006B84A /* Double+Extension.swift */; };
+		F4FF6E9D26BA441800ACD08B /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF6E9C26BA441800ACD08B /* DateHelper.swift */; };
+		F4FF6EA426BA45E200ACD08B /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF6EA326BA45E200ACD08B /* Int+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +95,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F4276FEF26BA9A66000D660C /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		F457BD2226B7DA86003FA082 /* MiniRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F457BD2526B7DA86003FA082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F457BD2726B7DA86003FA082 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +125,14 @@
 		F457BD6F26B7DA88003FA082 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F457BD7126B7DA88003FA082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F457BD7226B7DA88003FA082 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F457BD8C26B8DD8A003FA082 /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
+		F457BD9826B8DD95003FA082 /* WorkoutDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailViewModel.swift; sourceTree = "<group>"; };
+		F457BDA126B8DDBC003FA082 /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
+		F4C560A626B8E7880006B84A /* DummyDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDataHelper.swift; sourceTree = "<group>"; };
+		F4C560AD26B8EA810006B84A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		F4C560BE26B8ED1E0006B84A /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		F4FF6E9C26BA441800ACD08B /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		F4FF6EA326BA45E200ACD08B /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +194,10 @@
 		F457BD2426B7DA86003FA082 /* MiniRun */ = {
 			isa = PBXGroup;
 			children = (
+				F4FF6EAA26BA918800ACD08B /* Extension */,
+				F4C560A526B8E7760006B84A /* Helper */,
+				F457BDA026B8DDA3003FA082 /* View */,
+				F457BD9F26B8DD9B003FA082 /* Model */,
 				F457BD2526B7DA86003FA082 /* AppDelegate.swift */,
 				F457BD2726B7DA86003FA082 /* SceneDelegate.swift */,
 				F457BD2926B7DA86003FA082 /* ContentView.swift */,
@@ -246,6 +268,51 @@
 				F457BD6F26B7DA88003FA082 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F457BD8B26B8DD59003FA082 /* WorkoutDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F457BD8C26B8DD8A003FA082 /* WorkoutDetailView.swift */,
+				F457BD9826B8DD95003FA082 /* WorkoutDetailViewModel.swift */,
+			);
+			path = WorkoutDetail;
+			sourceTree = "<group>";
+		};
+		F457BD9F26B8DD9B003FA082 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F457BDA126B8DDBC003FA082 /* WorkoutModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F457BDA026B8DDA3003FA082 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F457BD8B26B8DD59003FA082 /* WorkoutDetail */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4C560A526B8E7760006B84A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F4C560A626B8E7880006B84A /* DummyDataHelper.swift */,
+				F4FF6E9C26BA441800ACD08B /* DateHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F4FF6EAA26BA918800ACD08B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F4C560AD26B8EA810006B84A /* Date+Extension.swift */,
+				F4C560BE26B8ED1E0006B84A /* Double+Extension.swift */,
+				F4276FEF26BA9A66000D660C /* Color+Extension.swift */,
+				F4FF6EA326BA45E200ACD08B /* Int+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,9 +507,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F457BD9926B8DD95003FA082 /* WorkoutDetailViewModel.swift in Sources */,
+				F4C560AE26B8EA810006B84A /* Date+Extension.swift in Sources */,
+				F4C560BF26B8ED1E0006B84A /* Double+Extension.swift in Sources */,
+				F4C560A726B8E7880006B84A /* DummyDataHelper.swift in Sources */,
+				F457BDA226B8DDBC003FA082 /* WorkoutModel.swift in Sources */,
+				F4FF6EA426BA45E200ACD08B /* Int+Extension.swift in Sources */,
+				F4FF6E9D26BA441800ACD08B /* DateHelper.swift in Sources */,
+				F4276FF026BA9A66000D660C /* Color+Extension.swift in Sources */,
 				F457BD2626B7DA86003FA082 /* AppDelegate.swift in Sources */,
 				F457BD2826B7DA86003FA082 /* SceneDelegate.swift in Sources */,
 				F457BD2A26B7DA86003FA082 /* ContentView.swift in Sources */,
+				F457BD8D26B8DD8A003FA082 /* WorkoutDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
