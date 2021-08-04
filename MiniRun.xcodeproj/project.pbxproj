@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4EEA9D7C26BAA6D4006D9A61 /* WorkoutSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA9D7B26BAA6D4006D9A61 /* WorkoutSummary.swift */; };
+		9BF9896826BABA5D0096011B /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF9896726BABA5D0096011B /* WorkoutListView.swift */; };
+		9BF9896C26BADFE60096011B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4276FEF26BA9A66000D660C /* Color+Extension.swift */; };
+		9BF9896D26BAE1350096011B /* DummyDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C560A626B8E7880006B84A /* DummyDataHelper.swift */; };
+		9BF9896E26BAE14E0096011B /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BDA126B8DDBC003FA082 /* WorkoutModel.swift */; };
+		9BF9897126BAE2780096011B /* WorkoutListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF9897026BAE2780096011B /* WorkoutListViewModel.swift */; };
 		F4276FF026BA9A66000D660C /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4276FEF26BA9A66000D660C /* Color+Extension.swift */; };
 		F457BD2626B7DA86003FA082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD2526B7DA86003FA082 /* AppDelegate.swift */; };
 		F457BD2826B7DA86003FA082 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457BD2726B7DA86003FA082 /* SceneDelegate.swift */; };
@@ -97,6 +102,8 @@
 
 /* Begin PBXFileReference section */
 		4EEA9D7B26BAA6D4006D9A61 /* WorkoutSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSummary.swift; sourceTree = "<group>"; };
+		9BF9896726BABA5D0096011B /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
+		9BF9897026BAE2780096011B /* WorkoutListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListViewModel.swift; sourceTree = "<group>"; };
 		F4276FEF26BA9A66000D660C /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		F457BD2226B7DA86003FA082 /* MiniRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F457BD2526B7DA86003FA082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -201,6 +208,30 @@
 			path = WorkoutSummary;
 			sourceTree = "<group>";
 		};
+		9BF9896526BAB9F20096011B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9BF9896626BAB9FB0096011B /* WorkoutList */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9BF9896626BAB9FB0096011B /* WorkoutList */ = {
+			isa = PBXGroup;
+			children = (
+				9BF9896726BABA5D0096011B /* WorkoutListView.swift */,
+			);
+			path = WorkoutList;
+			sourceTree = "<group>";
+		};
+		9BF9896F26BAE2660096011B /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				9BF9897026BAE2780096011B /* WorkoutListViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
 		F457BD1926B7DA85003FA082 = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +314,8 @@
 		F457BD5F26B7DA87003FA082 /* MiniRun WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9BF9896F26BAE2660096011B /* View Model */,
+				9BF9896526BAB9F20096011B /* View */,
 				F457BD6026B7DA87003FA082 /* HostingController.swift */,
 				F457BD6226B7DA87003FA082 /* ContentView.swift */,
 				F457BD6426B7DA87003FA082 /* ExtensionDelegate.swift */,
@@ -579,11 +612,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F457BD6326B7DA87003FA082 /* ContentView.swift in Sources */,
+				9BF9896E26BAE14E0096011B /* WorkoutModel.swift in Sources */,
+				9BF9897126BAE2780096011B /* WorkoutListViewModel.swift in Sources */,
 				F457BD6126B7DA87003FA082 /* HostingController.swift in Sources */,
 				F457BD6726B7DA87003FA082 /* NotificationController.swift in Sources */,
+				9BF9896826BABA5D0096011B /* WorkoutListView.swift in Sources */,
+				9BF9896D26BAE1350096011B /* DummyDataHelper.swift in Sources */,
 				F457BD6526B7DA87003FA082 /* ExtensionDelegate.swift in Sources */,
 				F457BD6926B7DA87003FA082 /* NotificationView.swift in Sources */,
 				F457BD6B26B7DA87003FA082 /* ComplicationController.swift in Sources */,
+				9BF9896C26BADFE60096011B /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,7 +787,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MiniRun WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = JSB449F8V6;
+				DEVELOPMENT_TEAM = K772APZXFW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "MiniRun WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -773,7 +811,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MiniRun WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = JSB449F8V6;
+				DEVELOPMENT_TEAM = K772APZXFW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "MiniRun WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -799,7 +837,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JSB449F8V6;
+				DEVELOPMENT_TEAM = K772APZXFW;
 				IBSC_MODULE = MiniRun_WatchKit_Extension;
 				INFOPLIST_FILE = "MiniRun WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.MiniRun.watchkitapp;
@@ -819,7 +857,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JSB449F8V6;
+				DEVELOPMENT_TEAM = K772APZXFW;
 				IBSC_MODULE = MiniRun_WatchKit_Extension;
 				INFOPLIST_FILE = "MiniRun WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.MiniRun.watchkitapp;
@@ -840,7 +878,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MiniRun/Preview Content\"";
-				DEVELOPMENT_TEAM = JSB449F8V6;
+				DEVELOPMENT_TEAM = K772APZXFW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MiniRun/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -863,7 +901,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MiniRun/Preview Content\"";
-				DEVELOPMENT_TEAM = JSB449F8V6;
+				DEVELOPMENT_TEAM = K772APZXFW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MiniRun/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -886,7 +924,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JSB449F8V6;
+				DEVELOPMENT_TEAM = K772APZXFW;
 				INFOPLIST_FILE = MiniRunTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -909,7 +947,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JSB449F8V6;
+				DEVELOPMENT_TEAM = K772APZXFW;
 				INFOPLIST_FILE = MiniRunTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -932,7 +970,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JSB449F8V6;
+				DEVELOPMENT_TEAM = K772APZXFW;
 				INFOPLIST_FILE = MiniRunUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -954,7 +992,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JSB449F8V6;
+				DEVELOPMENT_TEAM = K772APZXFW;
 				INFOPLIST_FILE = MiniRunUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
