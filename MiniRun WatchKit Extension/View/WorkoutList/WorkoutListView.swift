@@ -62,7 +62,6 @@ struct WorkoutListView: View {
                         Spacer()
                     }
                 }
-                    .listRowPlatterColor(Color.init(red: 0.234, green: 0.234, blue: 0.234))
             }
                 .listStyle(CarouselListStyle())
                 .navigationTitle("Workout")
