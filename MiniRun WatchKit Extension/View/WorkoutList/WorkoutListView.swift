@@ -48,13 +48,15 @@ struct WorkoutListView: View {
     let viewModel = WorkoutListViewModel()
     
     var body: some View {
-        List {
-            WorkOutListCellView(workout: viewModel.data[0])
-            WorkOutListCellView(workout: viewModel.data[1])
-            WorkOutListCellView(workout: viewModel.data[2])
+        NavigationView {
+            List {
+                WorkOutListCellView(workout: viewModel.data[0])
+                WorkOutListCellView(workout: viewModel.data[1])
+                WorkOutListCellView(workout: viewModel.data[2])
+            }
+                .listStyle(CarouselListStyle())
+                .navigationTitle("Workout")
         }
-            .listStyle(CarouselListStyle())
-            .navigationTitle("Workout")
     }
 }
 
