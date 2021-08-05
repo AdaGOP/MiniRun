@@ -53,6 +53,16 @@ struct WorkoutListView: View {
                 WorkOutListCellView(workout: viewModel.data[0])
                 WorkOutListCellView(workout: viewModel.data[1])
                 WorkOutListCellView(workout: viewModel.data[2])
+                Button(action: {}) {
+                    HStack {
+                        Spacer()
+                        Text("Add Workout")
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.primaryGreen)
+                        Spacer()
+                    }
+                }
+                    .listRowPlatterColor(Color.init(red: 0.234, green: 0.234, blue: 0.234))
             }
                 .listStyle(CarouselListStyle())
                 .navigationTitle("Workout")
