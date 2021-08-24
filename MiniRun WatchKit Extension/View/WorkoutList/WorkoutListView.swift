@@ -13,7 +13,7 @@ struct WorkOutListCellView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack(alignment: .top) {
-                Image(systemName: "hand.point.right.fill")
+                Image(systemName: "figure.walk")
                     .font(.system(size: 54))
                     .foregroundColor(Color.primaryGreen)
                 Spacer()
